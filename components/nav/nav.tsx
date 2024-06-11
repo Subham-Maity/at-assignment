@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav className="flex justify-between font-medium items-center p-4 bg-white text-white  h-[85px] w-full">
       <div className="flex items-center">
-        <img src="/logo/logo.svg" alt="Logo" className="h-8" />
+        <img src="/logo/logo.svg" alt="Logo" className="h-12" />
         <span className="font-semibold text-xl tracking-tight ml-2">Re</span>
       </div>
       <div className="flex gap-4 text-black">

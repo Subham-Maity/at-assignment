@@ -52,7 +52,7 @@ const ChartComponent: FC = () => {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">Your FD Portfolio</h2>
         <div>
-          <select className="p-1 border border-gray-300 rounded">
+          <select className="p-3 border border-gray-300 rounded">
             <option>Deposit Amt</option>
           </select>
         </div>
