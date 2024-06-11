@@ -6,10 +6,10 @@ import LayoutMiddleBox from "@/components/box/middle-box/layout";
 const Layout = () => {
   return (
     <div className="bg-gray-100 w-full p-16  min-h-screen">
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-3">
         <div className="flex gap-3">
           <div className="w-1/3">
-            {/*<ChartComponent />*/}
+            <ChartComponent />
           </div>
           <div className="w-2/3">
             {/*<TimelineBox />*/}

@@ -4,7 +4,7 @@ export const middleBoxData = [
   {
     bg: "bg-[#520b8d]/10",
     logo: "./middle-box/1.png",
-    title: "Bank Name",
+    title: "Utkarsh Small Finance Bank",
     middleBoxBg: "bg-[#520b8d]/15",
     middleBoxDescriptionIconColor: "text-[#520b8d]",
     middleBoxDescription: {
@@ -27,12 +27,12 @@ export const middleBoxData = [
   {
     bg: "bg-[#0072BB]/10",
     logo: "./middle-box/2.png",
-    title: "Second Bank",
+    title: "Bajaj Finserv",
     middleBoxBg: "bg-[#0072BB]/15",
     middleBoxDescriptionIconColor: "text-[#0072BB]",
     middleBoxDescription: {
-      desc1: "Secure Savings",
-      desc2: "Trusted by Millions",
+      desc1: "Crisil AAA Rated",
+      desc2: "No Video KYC required",
     },
     middleBoxDescriptionIcons: {
       desc1Icon: FaCheckCircle,
@@ -40,7 +40,7 @@ export const middleBoxData = [
     },
     interestPercentage: 8.5,
     actionButtonColor: "bg-[#0072BB]",
-    actionButtonText: "Join Now",
+    actionButtonText: "Book Now",
     action: () => {
       // Handle action
     },
@@ -49,12 +49,12 @@ export const middleBoxData = [
   {
     bg: "bg-[#010101]/10",
     logo: "./middle-box/3.png",
-    title: "Third Bank",
+    title: "Shriram Finance",
     middleBoxBg: "bg-[#010101]/15",
     middleBoxDescriptionIconColor: "text-[#010101]",
     middleBoxDescription: {
-      desc1: "Easy Transactions",
-      desc2: "24/7 Customer Support",
+      desc1: "Crisil AAA Rated",
+      desc2: "No Video KYC required",
     },
 
     middleBoxDescriptionIcons: {
@@ -64,7 +64,7 @@ export const middleBoxData = [
 
     interestPercentage: 7.8,
     actionButtonColor: "bg-[#010101]",
-    actionButtonText: "Get Started",
+    actionButtonText: "Book Now",
     action: () => {
       // Handle action
     },
@@ -73,12 +73,12 @@ export const middleBoxData = [
   {
     bg: "bg-[#FF0000]/10",
     logo: "./middle-box/4.png",
-    title: "Fourth Bank",
+    title: "Mahindra Finance",
     middleBoxBg: "bg-[#FF0000]/15",
     middleBoxDescriptionIconColor: "text-[#FF0000]",
     middleBoxDescription: {
-      desc1: "Free ATM Withdrawals",
-      desc2: "No Hidden Fees",
+      desc1: "Crisil AAA Rated",
+      desc2: "No Video KYC required",
     },
 
     middleBoxDescriptionIcons: {
@@ -87,7 +87,7 @@ export const middleBoxData = [
     },
     interestPercentage: 6.75,
     actionButtonColor: "bg-[#FF0000]",
-    actionButtonText: "Get Started",
+    actionButtonText: "Book Now",
     action: () => {
       // Handle action
     },
