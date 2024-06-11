@@ -3,7 +3,7 @@ import Dropdown from "@/components/ui/custom/select";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between font-medium items-center p-4 bg-white text-white  h-[85px] w-full">
+    <nav className="flex justify-between font-medium items-center p-4 bg-white text-white  h-[85px] w-full px-20">
       <div className="flex items-center">
         <img src="/logo/logo.svg" alt="Logo" className="h-12" />
         <span className="font-semibold text-xl tracking-tight ml-2">Re</span>
