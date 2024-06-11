@@ -3,6 +3,7 @@ import ChartComponent from "@/components/box/top-box/chart-box";
 import LayoutMiddleBox from "@/components/box/middle-box/layout";
 import LayoutSideBox from "@/components/box/side-box/layout";
 import LayoutBottomBox from "@/components/box/bottom-box/layout";
+import FDChart from "@/components/box/top-box/timeline-box";
 
 const Layout = () => {
   return (
@@ -13,7 +14,9 @@ const Layout = () => {
           <div className="w-1/3">
             <ChartComponent />
           </div>
-          <div className="w-2/3">{/*<TimelineBox />*/}</div>
+          <div className="w-2/3">
+            <FDChart />
+          </div>
         </div>
         <div className="flex justify-between gap-4">
           <div className="flex flex-col w-2/3 gap-8">
