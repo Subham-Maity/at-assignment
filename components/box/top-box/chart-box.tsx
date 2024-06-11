@@ -9,19 +9,7 @@ import {
   Tooltip,
 } from "recharts";
 import "tailwindcss/tailwind.css";
-
-type DataType = {
-  name: string;
-  value: number;
-  color: string;
-};
-
-const data: DataType[] = [
-  { name: "Bajaj Finserv", value: 25000, color: "#7E5BEF" },
-  { name: "Shriram Finance", value: 20000, color: "#FDBA8C" },
-  { name: "Mahindra Finance", value: 15000, color: "#A3E635" },
-  { name: "Utkarsh Small Finance Bank", value: 40000, color: "#2DD4BF" },
-];
+import { data } from "@/data";
 
 const RADIAN = Math.PI / 180;
 
@@ -69,8 +57,8 @@ const ChartComponent: FC = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="relative h-[350px] w-[350px]">
-          <ResponsiveContainer width="70%" height="70%">
+        <div className="relative h-[350px] w-[380px]">
+          <ResponsiveContainer width="80%" height="70%">
             <PieChart>
               <Pie
                 data={data}
@@ -78,7 +66,7 @@ const ChartComponent: FC = () => {
                 nameKey="name"
                 cx="50%"
                 cy="50%"
-                outerRadius={120} // Increase the radius here
+                outerRadius={110}
                 fill="#8884d8"
                 label={renderCustomizedLabel}
                 labelLine={false}
@@ -96,8 +84,6 @@ const ChartComponent: FC = () => {
           </ResponsiveContainer>
         </div>
         <ul className="mt-4 text-sm flex-col gap-2">
-          {" "}
-          {/* Adjust the size of the text in the legend */}
           {data.map((entry, index) => (
             <li key={`item-${index}`} className="flex items-center mb-2">
               <span

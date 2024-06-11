@@ -16,13 +16,15 @@ const BankCard: React.FC<BankCardProps> = ({
   middleBoxDescriptionIcons,
 }) => {
   return (
-    <div className="bg-white p-2 max-w-sm mx-auto">
-      <div className={`rounded-sm shadow-md p-8 ${bg} flex flex-col`}>
-        <div className="flex items-center mb-4">
+    <div className="bg-white p-2">
+      <div
+        className={`rounded-sm shadow-md p-8 ${bg} flex flex-col gap-8 h-60`}
+      >
+        <div className="flex items-center">
           <img src={logo} alt={title} className="h-8 mr-2" />
           <h3 className="text-black font-bold text-xl ">{title}</h3>
         </div>
-        <div className={`rounded-md flex gap-2 mb-4 `}>
+        <div className={`rounded-md flex gap-2`}>
           <div className={`flex items-center  ${middleBoxBg} rounded-md p-2`}>
             {middleBoxDescriptionIcons?.desc1Icon && (
               <middleBoxDescriptionIcons.desc1Icon

@@ -1,4 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { DataType } from "@/components/box/top-box/type/chart.type";
 
 export const middleBoxData = [
   {
@@ -89,6 +90,70 @@ export const middleBoxData = [
     actionButtonColor: "bg-[#FF0000]",
     actionButtonText: "Book Now",
     action: () => {
+      // Handle action
+    },
+  },
+];
+
+export const data: DataType[] = [
+  { name: "Bajaj Finserv", value: 25000, color: "#7E5BEF" },
+  { name: "Shriram Finance", value: 20000, color: "#FDBA8C" },
+  { name: "Mahindra Finance", value: 15000, color: "#A3E635" },
+  { name: "Utkarsh Small Finance Bank", value: 40000, color: "#2DD4BF" },
+];
+
+export const sideBoxData = [
+  {
+    topTitle: "Video KYC",
+    calendarTitle: "Scheduled On",
+    calendarMiddleText: "28",
+    calendarBottomText: "Oct, 2023",
+    middleTitle: "Utkarsh SF Bank FD Plan 2",
+    depositAmt: 20000,
+    tenure: "2 Years",
+    interestRate: "9.10%",
+    button1Text: "Complete Now",
+    button1Action: () => {
+      // Handle action
+    },
+    button2Text: "Reschedule",
+    button2Action: () => {
+      // Handle action
+    },
+  },
+  {
+    topTitle: "Pending Payment",
+    calendarTitle: "Pay By",
+    calendarMiddleText: "30",
+    calendarBottomText: "Oct, 2023",
+    middleTitle: "Bajaj Finserv Corp FD 1",
+    depositAmt: 25000,
+    tenure: "18 Months",
+    interestRate: "8.10%",
+    button1Text: "Pay Now",
+    button1Action: () => {
+      // Handle action
+    },
+    button2Text: "Cancel Application",
+    button2Action: () => {
+      // Handle action
+    },
+  },
+  {
+    topTitle: "Upcoming FD Maturity",
+    calendarTitle: "Renew by",
+    calendarMiddleText: "30",
+    calendarBottomText: "Oct, 2023",
+    middleTitle: "Shriram Finance Corp FD 1",
+    depositAmt: 25000,
+    tenure: "18 Months",
+    interestRate: "8.10%",
+    button1Text: "Renew Now",
+    button1Action: () => {
+      // Handle action
+    },
+    button2Text: "Compare other FDs",
+    button2Action: () => {
       // Handle action
     },
   },
