@@ -38,7 +38,8 @@ const renderCustomizedLabel: FC<PieLabelRenderProps> = ({
       fill="white"
       textAnchor={Number(x) > Number(cx) ? "start" : "end"}
       dominantBaseline="central"
-      fontSize={10} // Adjust font size here to fit text inside the chart
+      fontSize={10}
+      fontWeight={80}
     >
       {`${data[index].value.toLocaleString()} (${percentage}%)`}
     </text>

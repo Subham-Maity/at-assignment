@@ -1,5 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
-import { DataType } from "@/components/box/top-box/type/chart.type";
+import { DataType } from "@/components/box/top-box/types/chart.type";
+import { IBottomBoxData } from "@/components/box/bottom-box/types/bottom-box.types";
 
 export const middleBoxData = [
   {
@@ -70,7 +71,6 @@ export const middleBoxData = [
       // Handle action
     },
   },
-  // ... Fourth object
   {
     bg: "bg-[#FF0000]/10",
     logo: "./middle-box/4.png",
@@ -157,4 +157,22 @@ export const sideBoxData = [
       // Handle action
     },
   },
+];
+export const bottomBoxData: IBottomBoxData[] = [
+  {
+    title: "How FDs are taxed",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "How FDs are taxed",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "How FDs are taxed",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  // ... other items
 ];
