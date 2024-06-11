@@ -162,7 +162,7 @@ export const bottomBoxData: IBottomBoxData[] = [
   {
     title: "How FDs are taxed",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum ",
   },
   {
     title: "How FDs are taxed",
@@ -174,5 +174,16 @@ export const bottomBoxData: IBottomBoxData[] = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
+  {
+    title: "How FDs are taxed",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    title: "How FDs are taxed",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+
   // ... other items
 ];

@@ -17,9 +17,7 @@ const BankCard: React.FC<BankCardProps> = ({
 }) => {
   return (
     <div className="bg-white p-2">
-      <div
-        className={`rounded-sm shadow-md p-8 ${bg} flex flex-col gap-8 h-60`}
-      >
+      <div className={`rounded-sm shadow-md p-8 ${bg} flex flex-col gap-8`}>
         <div className="flex items-center">
           <img src={logo} alt={title} className="h-8 mr-2" />
           <h3 className="text-black font-bold text-xl ">{title}</h3>

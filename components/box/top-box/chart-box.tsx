@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import "tailwindcss/tailwind.css";
 import { data } from "@/data";
+import useWindowDimension from "@/hooks/use-window-dimension";
 
 const RADIAN = Math.PI / 180;
 
@@ -46,6 +47,10 @@ const renderCustomizedLabel: FC<PieLabelRenderProps> = ({
 };
 
 const ChartComponent: FC = () => {
+  const { width } = useWindowDimension();
+
+  const isMobile = width < 768;
+
   return (
     <div className="p-4 rounded-lg shadow-lg h-[400px] w-full bg-white">
       <div className="flex justify-between items-center mb-4">
@@ -57,8 +62,12 @@ const ChartComponent: FC = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="relative h-[350px] w-[380px]">
-          <ResponsiveContainer width="80%" height="70%">
+        <div
+          className={`relative h-[350px] ${
+            isMobile ? "w-[400px]" : "w-[380px]"
+          }`}
+        >
+          <ResponsiveContainer width={isMobile ? "90%" : "80%"} height="70%">
             <PieChart>
               <Pie
                 data={data}
@@ -66,7 +75,7 @@ const ChartComponent: FC = () => {
                 nameKey="name"
                 cx="50%"
                 cy="50%"
-                outerRadius={110}
+                outerRadius={isMobile ? 90 : 110}
                 fill="#8884d8"
                 label={renderCustomizedLabel}
                 labelLine={false}
@@ -77,7 +86,10 @@ const ChartComponent: FC = () => {
               </Pie>
               <Tooltip
                 formatter={(value: number) =>
-                  `${value.toLocaleString()} (${((value / 100000) * 100).toFixed(0)}%)`
+                  `${value.toLocaleString()} (${(
+                    (value / 100000) *
+                    100
+                  ).toFixed(0)}%)`
                 }
               />
             </PieChart>
@@ -85,7 +97,10 @@ const ChartComponent: FC = () => {
         </div>
         <ul className="mt-4 text-sm flex-col gap-2">
           {data.map((entry, index) => (
-            <li key={`item-${index}`} className="flex items-center mb-2">
+            <li
+              key={`item-${index}`}
+              className="flex lg:gap-4 lg:text-xl items-center mb-2"
+            >
               <span
                 className="w-4 h-4 mr-2 rounded-full"
                 style={{ backgroundColor: entry.color }}

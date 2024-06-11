@@ -7,15 +7,15 @@ const BottomBoxItem: React.FC<IBottomBoxItem> = ({ title, description }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   return (
-    <div className="flex flex-col p-4 bg-white border rounded shadow w-full ">
-      <h2 className="font-bold">{title}</h2>
+    <div className="flex flex-col gap-4 p-4 bg-white border rounded shadow h-52">
+      <h2 className="font-bold whitespace-nowrap">{title}</h2>
       <p>
         {showFullDescription
           ? description
           : `${description.substring(0, 100)}...`}
       </p>
       <button
-        className="text-blue-600 hover:text-blue-800 mt-2 items-starte"
+        className="text-blue-600 hover:text-blue-800 mt-2 self-start" // Corrected class name here
         onClick={() => setShowFullDescription(!showFullDescription)}
       >
         Read more

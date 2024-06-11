@@ -18,7 +18,7 @@ const SideBox: React.FC<CardProps> = ({
   button2Action,
 }) => {
   return (
-    <div className="flex flex-col gap-1 bg-white p-8 shadow-md w-full h-70 border">
+    <div className="flex flex-col gap-1 bg-white p-4 shadow-md w-full border">
       <h3 className="text-lg font-bold mb-2">{topTitle}</h3>
       <div className="flex gap-6">
         <div className="flex flex-col mb-2">
