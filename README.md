@@ -1,6 +1,6 @@
 # Basic Dash Layout
 
-![image](./ss.png)
+![image](./ss1.png)
 
 - Install & Run
 ```shell
